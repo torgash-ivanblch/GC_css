@@ -1,0 +1,130 @@
+/* Убираем ненужный отступ */
+.stream-table { 
+  margin-left:0!important;
+}
+
+/* Настраиваем флекс на всю таблицу */
+.stream-table tbody {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+}
+
+/* Настраиваем внешней вид карточек */
+.stream-table tbody tr {
+  position:relative;
+  flex:0 0 calc(70% - 20px);
+  height:200px;
+  border-radius:9px;
+  box-shadow:0 0 3px 1px rgba(0,0,0,0.1);
+  overflow:hidden;
+  margin:10px;
+  transition:all 0.5s;
+}
+
+/* Адаптируем под разные разрешения */
+@media (max-width:1200px) {
+  .stream-table tbody tr {
+    flex:0 0 calc(90% - 20px);
+  }
+}
+
+@media (max-width:1000px) {
+  .stream-table tbody tr {
+    flex:0 0 calc(90% - 20px);
+  }
+}
+
+@media (max-width:850px) {
+  .stream-table tbody tr {
+    flex:0 0 calc(90% - 20px);
+  }
+}
+
+@media (max-width:510px) {
+  .stream-table tbody tr {
+      flex:0 0 100%;
+  }
+}
+
+.stream-table tbody tr td {
+  position:absolute;
+  height:100%;
+  width:100%;
+  padding:0!important;
+}
+
+/* Настраиваем заголовок */
+.stream-table tbody tr td .stream-title {
+  position:absolute;
+  bottom:35px; 
+  color:black!important;
+  z-index:1;
+  background:white;
+  padding:0 5px;
+  border-radius:5px;
+  margin:auto 20px;
+  display:none;
+}
+
+/* Настраиваем описание */
+.stream-table tbody tr td div {
+  position:absolute;
+  bottom:10px;
+  color:white;
+    left:20px;
+    display:none;
+}
+
+/* Фиксим проблему с кликабельностью */
+.stream-table tr a {
+	height: 100%;
+	z-index: 2;
+	position: relative;
+}
+
+
+/* Настраиваем заливку */
+.stream-table tbody tr td:after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:200px;
+background: #8E2DE2;
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+background: linear-gradient(to right, #4A00E0, #8E2DE2);}
+
+/* Добавляем индивидуальную картинку каждому тренингу */
+.stream-table tbody tr[data-training-id="87321389"] td:after {         background:url(https://fs-th02.getcourse.ru/fileservice/file/thumbnail/h/16e633b176971c0e4619ac0ba83132d0.png/s/600x/a/42017) no-repeat;
+  background-size:cover;
+}
+
+.stream-table tbody tr[data-training-id="80325753"] td:after {         background:url(https://fs03.getcourse.ru/fileservice/file/download/a/42017/sc/307/h/2999d2ee7288d7e9bd06c5f60baa4cf3.jpg) no-repeat;
+  background-size:cover;
+}
+.stream-table tbody tr[data-training-id="125393947"] td:after {         background:url(https://fs-th02.getcourse.ru/fileservice/file/thumbnail/h/8c0b02005087793a78a64ca12021dd6c.jpg/s/600x/a/42017) no-repeat;
+  background-size:cover;
+}
+.stream-table tbody tr[data-training-id="145609043"] td:after {         background:url(https://edu.volbga.ru/pl/fileservice/user/file/download?h=94b4040e7229afe1327b645e22df2c20.png) no-repeat;
+  background-size:cover;
+}
+.stream-table tbody tr[data-training-id="36807958"] td:after {         background:url(https://fs-th02.getcourse.ru/fileservice/file/thumbnail/h/76859e3b05495eecfcccd96b68200f0f.jpg/s/600x/a/42017) no-repeat;
+  background-size:cover;
+}
+.stream-table tbody tr[data-training-id="36015909"] td:after {         background:url(https://fs-th02.getcourse.ru/fileservice/file/thumbnail/h/8029661b76046a844428f87cc9f219b6.jpg/s/600x/a/42017) no-repeat;
+  background-size:cover;
+}
+.stream-table tbody tr[data-training-id="35102951"] td:after {         background:url(https://fs-th02.getcourse.ru/fileservice/file/thumbnail/h/07a74eec7fde95808e875524acf3031c.jpg/s/600x/a/42017) no-repeat;
+  background-size:cover;
+}
+.stream-table tbody tr[data-training-id="153624968"] td:after {         background:url(https://edu.volbga.ru/pl/fileservice/user/file/download?h=951f23d43101ef0e4e785aec172e5f03.png) no-repeat;
+  background-size:cover;
+}.stream-table tbody tr[data-training-id="171833988"] td:after {         background:url(https://www.stevenaitchison.co.uk/wp-content/uploads/The-Magic.jpg) no-repeat;
+  background-size:cover;
+}
+/* Увеличиваем при наведении курсора */
+.stream-table tbody tr:hover {
+  transform:scale(1.05);
+}
