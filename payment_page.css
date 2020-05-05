@@ -1,0 +1,474 @@
+*{
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto','proxima-nova','arial' sans-serif !important;
+}
+
+.robokassa__img {
+    width: 300px !important;
+}
+
+.paypal__img {
+    width: 300px !important;
+}
+
+.partial-pay-block {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+}
+
+.title-pay {
+    display: inline-block;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #9fabb7;
+}
+
+.partial-pay-block__button {
+    -webkit-box-ordinal-group: 4;
+            order: 3;
+    align-self: flex-start;
+    margin-top: 15px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px !important;
+}
+
+.partial-pay-block__button:focus, .partial-pay-block__button:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.partial-pay-block span, .partial-pay-block div {
+    font-size: 17px;
+}
+
+.partial-pay-block span {
+    margin-bottom: 5px;
+}
+
+.paymethods {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+}
+
+.paymethods td, .paymethods th {
+}
+
+#payform td, #payform th {
+    padding: 0 !important;
+    line-height: normal !important;
+    vertical-align: baseline !important;
+    border-top: none !important;
+}
+
+.table {
+    margin-bottom: 35px !important;
+}
+
+#payform {
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+           flex-direction: column;
+}
+
+#YaKassa_bank_card {
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+}
+
+#YaKassa_bank_card::before {
+    content: "Оплата банковской картой Visa/Mastercard онлайн:";
+}
+
+#robokassa {
+   -webkit-box-ordinal-group:3;
+           order:2;
+}
+
+#robokassa::before {
+    content: "Альтернативный способ оплаты картой:";
+}
+
+#PAYPAL {
+    -webkit-box-ordinal-group: 4;
+            order: 3;
+}
+
+#PAYPAL::before {
+    content: "Платеж из зарубежных стран:";
+}
+
+#tinkoffcredit {
+        -webkit-box-ordinal-group: 5;
+            order: 4;
+}
+
+#tinkoffcredit::before {
+    content: "Кредит или рассрочка от Тинькофф:";
+}
+
+#YaKassa_installments {
+            -webkit-box-ordinal-group: 6;
+            order: 5;
+}
+
+#YaKassa_installments tbody tr td::ntn-child(1) div div {
+    display: none;
+}
+
+#YaKassa_installments::before {
+    content: "Рассрочка от Яндекс:";
+}
+
+#YaKassa_bank_card::before, #robokassa::before, #PAYPAL::before, #YaKassa_installments::before, #tinkoffcredit::before {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    border-bottom: 1px solid #9fabb7;
+}
+
+#payform table {
+    margin-bottom: 35px;
+}
+
+.paymethods td img {
+    max-width: 300px;
+}
+
+.fa-whatsapp {
+    color: #006caf;
+    font-size: 22px;
+}
+
+.countdown-timer.is-countdown, .deal-position-price, .position-actual-title, .button-pay .glyphicon { 
+    display: none; 
+}
+
+.gc-main-content.with-left-menu .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gc-main-content.with-left-menu {
+    margin-left: 0;
+}
+
+.main-page {
+    padding: 15px;
+    border: 4px solid #6FB242;
+    border-radius: 10px;
+}
+
+.main-page__separator {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.main-page__separator_small {
+    margin-top: 30px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.main-text__title {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.section-information__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.user-info__title {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.user-info__text {
+    line-height: 36px;
+    font-size: 20px;
+}
+
+.deal-positions {
+    margin-bottom: 30px;
+}
+
+.product-actual-title {
+    line-height: 32px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.xdget-visible-to-bg-users {
+    background-image: none;
+}
+
+.input-promocode {
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    font-size: 15px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.input-promocode:hover {
+    border-color: #585858;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.input-promocode:focus {
+    border-color: #6FB242;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.button-main {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.4);
+    font-size: 16px;
+    font-weight: 700;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.button-pay {
+    margin-top: 20px;
+    width: 300px;
+    background: #6FB242;
+}
+
+.partial-pay-form .button-pay {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.button-promocode {
+    width: 150px;
+    margin-left: 20px;
+    background: #6FB242;
+}
+
+.button-promocode:hover, .button-pay:hover, .button-pay:focus {
+    background: #4ab242;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.order-info > p {
+    font-size: 20px;
+}
+
+.block-wrap {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin-top: 10px;
+}
+
+.promocode-wrap {
+    margin-bottom: 25px;
+}
+
+.errorSummary {
+    margin-bottom: 0px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background: rgb(240, 128, 128, 0.9);
+}
+
+.deal-finish-price-title {
+    margin-bottom: 0;
+    font-size: 23px;
+}
+
+.deal-finish-price-title b {
+    color: #d07684;
+}
+
+.form-documents {
+    min-height: 230px;
+    border-radius: 5px;
+    padding: 20px 15px;
+    background-color: rgb(243, 246, 229);
+}
+
+.form-documents p {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.papal-button img, .tinkoff-button img {
+    display: none;
+}
+
+.table {
+    font-size: 21px;
+}
+
+
+@media only screen and (max-width : 1200px) {
+    .form-documents p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .main-page-block {
+        padding-bottom: 50px;
+    }
+    .main-text__title {
+   	 	margin-bottom: 25px;
+	}
+    .order-info {
+        text-align: center;
+    }
+    .user-info {
+        margin-top: 25px;
+        text-align: center;
+    }
+    .user-info__title {
+        margin-bottom: 10px;
+    }
+    .block-wrap {
+        -webkit-box-align: center;
+                align-items: center;
+    }
+    .partial-pay {
+        text-align: center;
+    }
+    .partial-pay-block {
+        align-items: center;
+    }
+    .partial-pay-block__button {
+        align-self: center;
+    }
+    .form-documents {
+        min-height: auto;
+    }
+    .form-documents p {
+        font-size: 15px;
+        line-height: 32px;
+    }
+    .after-pay-block {
+        margin-bottom: 35px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .main-page-block {
+        padding-bottom: 0;
+    }
+    .main-page__separator {
+    	margin-top: 30px;
+	}
+    .button-promocode:hover, .button-pay:hover, .button-pay:focus {
+    background: #6FB242;
+	}
+}
+
+@media only screen and (max-width : 560px) {
+    .main-page {
+    	border: none;
+    	padding: 0;
+    	border-radius: 0;
+	}
+    .form-documents {
+        margin: 20px 0 0 0;
+    }
+    .form-documents p {
+        line-height: 28px;
+    }
+    .button-pay span {
+        display: none;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .title-pay {
+        border-bottom: none;
+    }
+    .deal-positions {
+        margin-bottom: 20px;
+    }
+    .product-actual-title {
+        margin-bottom: 10px;
+        font-size: 22px
+    }
+    .promocode-wrap, .finish-price-wrap {
+        width: 100%;
+    }
+    .promodocode-form-wrap {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
+    }
+    .input-promocode {
+        -webkit-box-ordinal-group: 2;
+                order: 1;
+        width: 70%;
+        margin-bottom: 15px;
+    }
+    .button-promocode {
+        -webkit-box-ordinal-group: 4;
+                order: 3;
+        width: 50%;
+        margin-left: 0;
+    }
+    .errorSummary {
+        -webkit-box-ordinal-group: 3;
+                order: 2;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width : 380px) {
+    .position-actual-title {
+        font-size: 18px
+    }
+    .deal-finish-price-title b {
+        display: block;
+    }
+    .input-promocode {
+        width: 90%;
+    }
+    .button-promocode {
+        width: 70%;
+        margin-left: 0;
+    }
+    .button-pay {
+        width: 100%;
+    }
+}
